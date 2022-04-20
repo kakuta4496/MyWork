@@ -1,0 +1,26 @@
+#mainvisual {
+    margin-bottom: 80px;
+
+    .pc {
+        width: 100%;
+        max-width: 1920px;
+        height: 420px;
+        object-fit: cover;
+
+        @include sp {
+            display: none;
+        }
+    }
+
+    .sp {
+        display: none;
+
+        @include sp {
+            display: block;
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

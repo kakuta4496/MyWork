@@ -1,0 +1,22 @@
+#works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    @include sp {
+        flex-direction: column;
+    }
+
+    li {
+        width: 31%;
+
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    li img {
+        max-width: 100%;
+    }
+}
